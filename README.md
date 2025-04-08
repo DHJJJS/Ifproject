@@ -68,24 +68,26 @@ C++과 언리얼 엔진을 활용하여 플레이어와 AI가 함께 작동하�
 ---
 
 - ## 📁 디렉토리 구조 (요약)
-📦 Source/IfProject/
-├── 📂 Character           # 캐릭터 클래스 모음
-│   ├── IfProjectCharacter.h / .cpp        # 기본 캐릭터 (공통 베이스)
-│   ├── DealerCharacter.h / .cpp           # 딜러 클래스
-│   ├── TankerCharacter.h / .cpp           # 탱커 클래스
-│   ├── HealerCharacter.h / .cpp           # 힐러 클래스
-│   └── JobType.h                          # 직업(enum) 정의
-│
-├── 📂 Weapon              # 무기 및 투사체 관련
-│   ├── Gun.h / .cpp                     # 총기 클래스
-│   ├── IfProjectProjectile.h / .cpp    # 발사체 클래스
-│
-├── 📂 GameSystem         # 게임 규칙 및 UI 시스템
-│   ├── IfProjectGameMode.h / .cpp      # 게임 모드 (점령전 로직 포함)
-│   ├── IfProjectHUD.h / .cpp           # UI 및 HUD 관리
-│
-├── IfProject.cpp / .h       # 모듈 초기화, 전역 설정
-├── IfProject.Build.cs       # 언리얼 빌드 설정
+  
+📦 Source/IfProject
+- **Character/**
+  - IfProjectCharacter.h / .cpp   → 공통 캐릭터 베이스 클래스
+  - DealerCharacter.h / .cpp    → 딜러 전용 클래스
+  - TankerCharacter.h / .cpp    → 탱커 전용 클래스
+  - HealerCharacter.h / .cpp    → 힐러 전용 클래스
+  - JobType.h            → 직업 enum 정의
+
+- **Weapon/**
+  - Gun.h / .cpp        → 총기 클래스
+  - IfProjectProjectile.h / .cpp → 발사체 클래스
+
+- **GameSystem/**
+  - IfProjectGameMode.h / .cpp → 게임 규칙 및 점령전 로직
+  - IfProjectHUD.h / .cpp    → UI 및 HUD 관리
+
+- IfProject.cpp / .h       → 프로젝트 모듈 초기화
+- IfProject.Build.cs      → 언리얼 빌드 설정 파일
+
 
 ---
 
