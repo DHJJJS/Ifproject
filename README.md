@@ -149,10 +149,3 @@ C++과 언리얼 엔진을 활용하여 플레이어와 AI가 함께 작동하�
 ## 📝 라이선스
 
 본 프로젝트는 교육 및 학습 목적의 미니 프로젝트이며, 별도 라이선스를 포함하지 않습니다.
-"""
-
-# 저장
-with open(final_readme_path, "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-final_readme_path
